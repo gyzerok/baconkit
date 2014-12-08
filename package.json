@@ -13,7 +13,8 @@
   "author": "Fedor Nezhivoy <gyzerok@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "baconjs": "^0.7.37"
+    "baconjs": "^0.7.37",
+    "lodash": "^2.4.1"
   },
   "devDependencies": {
     "grunt": "^0.4.5",

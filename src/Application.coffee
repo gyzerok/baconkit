@@ -8,11 +8,19 @@ class Application extends Object
     @app = @gui.App
     @window = new Window(window)
 
-  start: () ->
+  onBeforeStart: ->
+  onStart: ->
+  start: ->
+    @onBeforeStart()
     @window.show()
+    @onStart()
 
-  stop: () ->
+  onBeforeStop: ->
+  onStop: ->
+  stop: ->
+    @onBeforeStop()
     @window.close()
+    @onStop()
 
   quit: () ->
     @app.quit()

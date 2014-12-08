@@ -3,7 +3,7 @@ Object = require('./Object')
 
 class Window extends Object
   constructor (opts) ->
-    if opts.window
+    if opts.window?
       @window = opts
     else
       @window = gui.Window.open(url, opts)
