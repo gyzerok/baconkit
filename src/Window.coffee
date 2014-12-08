@@ -2,7 +2,7 @@ Bacon = require('baconjs').Bacon
 Object = require('./Object')
 
 class Window extends Object
-  constructor (opts) ->
+  constructor (gui, opts) ->
     if opts.window?
       @window = opts
     else
