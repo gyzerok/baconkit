@@ -3,10 +3,10 @@ Object = require('./Object')
 Window = require('./Window')
 
 class Application extends Object
-  constructor: (@browser, @window) ->
+  constructor: (@browser, window) ->
     @gui = browser.require('nw.gui')
     @app = @gui.App
-    @window = if not @window? then gui.Window.get()
+    @window = new Window(window)
 
   start: () ->
     @window.show()

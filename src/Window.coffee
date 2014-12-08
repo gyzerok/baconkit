@@ -2,8 +2,11 @@ Bacon = require('baconjs').Bacon
 Object = require('./Object')
 
 class Window extends Object
-  constructor (@window, opts) ->
-    @window = gui.Window.open(url, opts)
+  constructor (opts) ->
+    if opts.window
+      @window = opts
+    else
+      @window = gui.Window.open(url, opts)
 
   width: Bacon.fromEventTarget(@window, 'resize')
               .map((width) -> width)
