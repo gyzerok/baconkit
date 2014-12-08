@@ -1,0 +1,22 @@
+{
+  "name": "BaconKit",
+  "version": "0.0.1",
+  "description": "",
+  "bin": "bin/baconkit.js",
+  "main": "index.js",
+  "homepage": "https://github.com/gyzerok/baconkit",
+  "bugs": "https://github.com/gyzerok/baconkit/issues",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gyzerok/baconkit.git"
+  },
+  "author": "Fedor Nezhivoy <gyzerok@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "baconjs": "^0.7.37"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-coffee": "^0.12.0"
+  }
+}
