@@ -5,7 +5,7 @@ module.exports = function (grunt) {
         pkg: grunt.file.readJSON('./package.json'),
         coffee: {
             compile: {
-                files: [{expand: true, flatten: true, src: ['core/**/*.coffee'], dest: 'lib', ext: '.js'}]
+                files: [{expand: true, flatten: true, src: ['src/**/*.coffee'], dest: 'lib', ext: '.js'}]
             }
         }
     });
