@@ -7,10 +7,10 @@ class Application extends Object
   modules: {}
   windows: {}
 
-  constructor: (@browser, window) ->
+  constructor: (@browser) ->
     @gui = browser.require('nw.gui')
     @app = @gui.App
-    @window = @window('main', gui, window or gui.Window.get())
+    @window = @window('main', gui.Window.get())
 
   window: (name, windowClass, opts) ->
     if windowClass? then @windows[name] = new windowClass(@gui, opts)
