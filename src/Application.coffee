@@ -8,7 +8,7 @@ class Application extends Object
   windows: {}
 
   constructor: (@browser) ->
-    @gui = browser.require('nw.gui')
+    @gui = @browser.require('nw.gui')
     @app = @gui.App
     @window = @window('main', gui.Window.get())
 
